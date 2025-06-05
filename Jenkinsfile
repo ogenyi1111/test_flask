@@ -36,6 +36,6 @@ pipeline {
         failure {
             echo 'This will run only if failed'
             slackSend (color: '#FF0000', message: "❌ Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' failed!")
-        }
+        
     }
 }
