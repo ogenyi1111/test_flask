@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('Checkout Code'){
       steps{
-        git 'https://github.com/ogenyi1111/test_flask'
+        git branch: 'main', Url: 'https://github.com/ogenyi1111/test_flask'
       }
     }
     stage('Build'){
